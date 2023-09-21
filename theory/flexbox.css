@@ -1,0 +1,68 @@
+/**
+  |============================
+  | Flexbox properties
+  |============================
+*/
+
+.flex-container {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 8px; */
+
+  /* Default properties */
+  /* flex-direction: row; */
+  /* justify-content: flex-start; */
+  /* align-items: stretch; */
+  /* flex-wrap: nowrap; */
+  /* align-content: stretch; */
+}
+
+.flex-element {
+  width: calc((100% - 8px * 4) / 5);
+
+  /* margin-right: 8px; */
+  /* Default properties */
+  /* flex-basis: auto; */
+  /* flex-shrink: 1; */
+  /* flex-grow: 0;  */
+}
+/* .flex-element:nth-child(6n) {
+  margin-right: 0;
+}
+.flex-element:not(:nth-child(6n)) {
+  margin-right: 8px;
+} */
+
+/**
+  |============================
+  | Flexbox grid
+  |============================
+*/
+:root {
+  --indent-col: 8px;
+  --indent-row: 8px;
+  --items: 5;
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--indent-col);
+  row-gap: var(--indent-row);
+}
+.card-set-item {
+  flex-basis: calc(
+    (100% - var(--indent-col) * (var(--items) - 1)) / var(--items)
+  );
+
+  /* width: calc((100% - 32px * 3) / 3); */
+}
+
+.team-list {
+  --items: 3;
+  --indent-col: 20px;
+}
+
+.gallery-list {
+  --items: 4;
+  --indent-col: 50px;
+}
