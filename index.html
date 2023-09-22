@@ -29,19 +29,16 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!-- <a class="promo" href=""></a> -->
     <!-- Header section -->
     <header class="header" id="home">
       <div class="header-container container">
         <nav class="header-nav">
           <a class="header-logo link" href="#">
             <span class="header-logo-italic">SIMPLY</span>CHOCOLATE
-            <img
-              class="header-logo-icon"
-              src="./images/icons/logo.svg"
-              alt="Logo image"
-              width="24"
-              height="24"
-            />
+            <svg class="header-logo-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
           </a>
           <ul class="header-list list">
             <li class="header-list-item">
@@ -66,13 +63,9 @@
               rel="noopener noreferrer"
               aria-label="Facebook link"
             >
-              <img
-                class="header-socials-icon"
-                src="./images/icons/facebook.svg"
-                alt="Icon facebook"
-                width="40"
-                height="40"
-              />
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
             </a>
           </li>
           <li class="header-socials-item">
@@ -83,13 +76,9 @@
               rel="noopener noreferrer"
               aria-label="Instagram link"
             >
-              <img
-                class="header-socials-icon"
-                src="./images/icons/instagram.svg"
-                alt="Icon instagram"
-                width="40"
-                height="40"
-              />
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
             </a>
           </li>
           <li class="header-socials-item">
@@ -100,13 +89,9 @@
               rel="noopener noreferrer"
               aria-label="Twitter link"
             >
-              <img
-                class="header-socials-icon"
-                src="./images/icons/twitter.svg"
-                alt="Icon twitter"
-                width="40"
-                height="40"
-              />
+              <svg class="header-socials-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -141,6 +126,11 @@
           <h2 class="visually-hidden">Benefits of our chocolate</h2>
           <ul class="benefits-list list">
             <li class="benefits-list-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-wrapper-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-title">Unsurpassed taste</h3>
               <p class="benefits-list-desc">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -150,6 +140,11 @@
               </p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-wrapper-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-title">Affordable price</h3>
               <p class="benefits-list-desc">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -160,6 +155,11 @@
               </p>
             </li>
             <li class="benefits-list-item">
+              <div class="benefits-wrapper">
+                <svg class="benefits-wrapper-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-list-title">Own production</h3>
               <p class="benefits-list-desc">
                 We take pride in our own production process, ensuring that every
@@ -258,37 +258,45 @@
           <h2 class="made-title section-title">
             How it’s <span class="section-title-accent">made</span>?
           </h2>
-          <img
-            class="made-pic"
-            src="./images/made/img.png"
-            alt=""
-            width="600"
-            height="400"
-          />
-          <h3 class="made-subtitle">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ol class="made-list list">
-            <li class="made-item">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-            <li class="made-item"
-              >At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li class="made-item">
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </li>
-            <li class="made-item"
-              >Heat the mixture over low heat, letting it barely boil.
-            </li>
-            <li class="made-item">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </li>
-          </ol>
+          <div class="made-wrapper">
+            <div class="made-left-side">
+              <img
+                class="made-pic"
+                src="./images/made/img.jpg"
+                alt=""
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="made-right-side">
+              <h3 class="made-subtitle">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ol class="made-list list">
+                <li class="made-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="made-item"
+                  >At the same time, prepare a water bath. Melt the butter on
+                  it.
+                </li>
+                <li class="made-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="made-item"
+                  >Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="made-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Products section -->
@@ -468,11 +476,13 @@
                 width="80"
                 height="80"
               />
-              <h3 class="reviews-author">Victoria Dobrzhanska</h3>
-              <p class="reviews-text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
+              <div class="reviews-wrapper">
+                <h3 class="reviews-author">Victoria Dobrzhanska</h3>
+                <p class="reviews-text">
+                  I love this chocolate bar. Perfect combination of light crispy
+                  wafer, covered in a thin layer chocolate.
+                </p>
+              </div>
             </li>
             <li class="reviews-item card-set-item">
               <img
@@ -482,12 +492,14 @@
                 width="80"
                 height="80"
               />
-              <h3 class="reviews-author">Nazar Babenko</h3>
-              <p class="reviews-text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
+              <div class="reviews-wrapper">
+                <h3 class="reviews-author">Nazar Babenko</h3>
+                <p class="reviews-text">
+                  This chocolate confection is a delight! A delight! The wafer
+                  is light and crisp, the hazelnut cream is smooth, and the
+                  chocolate is good.
+                </p>
+              </div>
             </li>
             <li class="reviews-item card-set-item">
               <img
@@ -497,12 +509,14 @@
                 width="80"
                 height="80"
               />
-              <h3 class="reviews-author">Olena Kampusch</h3>
-              <p class="reviews-text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
+              <div class="reviews-wrapper">
+                <h3 class="reviews-author">Olena Kampusch</h3>
+                <p class="reviews-text">
+                  Chocolate is a family favourite treat. Love the delicious
+                  smooth chocolate and the creaminess inside. The wafer is soft
+                  but crunchy.
+                </p>
+              </div>
             </li>
           </ul>
           <button class="btn btn-dark" type="button">Leave a review</button>
@@ -512,92 +526,90 @@
     <!-- Footer section -->
     <footer class="footer">
       <div class="container">
-        <p class="footer-slogan">
-          Chocolate <span class="footer-slogan-accent">Chocolate</span> a
-          delicious cure for a bad day
-        </p>
-        <address class="footer-address">
-          <p class="footer-address-subject">Social networks</p>
-          <ul class="footer-socials socials list">
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram icon"
-              >
-                <img
-                  class="socials-icon"
-                  src="./images/icons/instagram-footer.svg"
-                  alt="Instagram icon"
-                  width="40"
-                  height="40"
-                />
-              </a>
+        <div class="footer-top">
+          <p class="footer-slogan">
+            <span class="footer-slogan-accent">Chocolate</span> a delicious cure
+            for a bad day
+          </p>
+          <address class="footer-address">
+            <div class="footer-address-left">
+              <p class="footer-address-subject">Social networks</p>
+              <ul class="footer-socials socials list">
+                <li class="socials-item">
+                  <a
+                    class="socials-link"
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram icon"
+                  >
+                    <svg class="socials-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a
+                    class="socials-link"
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook icon"
+                  >
+                    <svg class="socials-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials-item">
+                  <a
+                    class="socials-link"
+                    href="https://twitter.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter icon"
+                  >
+                    <svg class="socials-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-address-right">
+              <p class="footer-address-subject">Contact us</p>
+              <ul class="footer-contatcs contacts list">
+                <li class="contacts-item">
+                  <a class="contacts-link link" href="tel:380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="contacts-item">
+                  <a
+                    class="contacts-link link"
+                    href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-menu list">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link link" href="#home">Home</a>
             </li>
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook icon"
-              >
-                <img
-                  class="socials-icon"
-                  src="./images/icons/facebook-footer.svg"
-                  alt="Facebook icon"
-                  width="40"
-                  height="40"
-                />
-              </a>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link link" href="#made">How it’s made?</a>
             </li>
-            <li class="socials-item">
-              <a
-                class="socials-link"
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter icon"
+            <li class="footer-menu-item">
+              <a class="footer-menu-link link" href="#reviews"
+                >Chocolate is loved</a
               >
-                <img
-                  class="socials-icon"
-                  src="./images/icons/twitter-footer.svg"
-                  alt="Twitter icon"
-                  width="40"
-                  height="40"
-                />
-              </a>
             </li>
           </ul>
-          <p class="footer-address-subject">Contact us</p>
-          <ul class="footer-contatcs contacts list">
-            <li class="contacts-item">
-              <a class="contacts-link link" href="tel:380684439426"
-                >+380 (68) 443-94-26</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="mailto:simplychoc@gmail.com"
-                >simplychoc@gmail.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <ul class="footer-menu list">
-          <li class="footer-menu-item">
-            <a class="footer-menu-link link" href="#home">Home</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link link" href="#made">How it’s made?</a>
-          </li>
-          <li class="footer-menu-item">
-            <a class="footer-menu-link link" href="#reviews"
-              >Chocolate is loved</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
   </body>
