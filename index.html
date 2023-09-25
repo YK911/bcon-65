@@ -8,7 +8,7 @@
       content="Treat yourself or a loved one to our finest ingredients for a moment of pure delight!"
     />
     <title>SIMPLY CHOCOLATE</title>
-    <!-- Fav -->
+    <!-- Fav icon -->
     <link rel="shortcut icon" href="./images/chocolate.png" type="image/png" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,7 +29,6 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <a class="promo" href=""></a> -->
     <!-- Header section -->
     <header class="header" id="home">
       <div class="header-container container">
@@ -42,7 +41,7 @@
           </a>
           <ul class="header-list list">
             <li class="header-list-item">
-              <a class="header-list-link link" href="#home">Home</a>
+              <a class="header-list-link current link" href="#home">Home</a>
             </li>
             <li class="header-list-item">
               <a class="header-list-link link" href="#made">How it’s made?</a>
@@ -180,6 +179,9 @@
           </h2>
           <ul class="ingridients-list card-set list">
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-1.png"
@@ -190,6 +192,9 @@
               <h3 class="ingridients-caption">MILK CHOCOLATE</h3>
             </li>
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-2.png"
@@ -200,6 +205,9 @@
               <h3 class="ingridients-caption">MILK</h3>
             </li>
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-3.png"
@@ -210,6 +218,9 @@
               <h3 class="ingridients-caption">NUTS</h3>
             </li>
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-4.png"
@@ -220,6 +231,9 @@
               <h3 class="ingridients-caption">SEMI - SWEET CHOCOLATE</h3>
             </li>
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-5.png"
@@ -230,6 +244,9 @@
               <h3 class="ingridients-caption">CACAO</h3>
             </li>
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-6.png"
@@ -240,6 +257,9 @@
               <h3 class="ingridients-caption">RASPBERRY</h3>
             </li>
             <li class="ingridients-item card-set-item">
+              <svg class="ingridients-item-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
               <img
                 class="ingridients-img"
                 src="./images/ingridients/img-7.png"
@@ -267,6 +287,11 @@
                 width="600"
                 height="400"
               />
+              <button class="made-btn" type="button" aria-label="Play button">
+                <svg class="made-btn-icon" width="44" height="44">
+                  <use href="./images/icons.svg#icon-play"></use>
+                </svg>
+              </button>
             </div>
             <div class="made-right-side">
               <h3 class="made-subtitle">
@@ -275,6 +300,9 @@
               </h3>
               <ol class="made-list list">
                 <li class="made-item">
+                  <!-- <svg class="" width="8" height="8">
+                    <use href="./images/icons.svg#icon-circle"></use>
+                  </svg> -->
                   Heat the milk in a saucepan without bringing it to a boil. Add
                   sugar and cocoa powder.
                 </li>
@@ -429,13 +457,23 @@
           </h2>
           <ul class="bestsellers-list card-set list">
             <li class="bestsellers-item card-set-item">
-              <img
-                class="bestsellers-img"
-                src="./images/bestsellers/img-1.jpg"
-                alt=""
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-wrapper">
+                <img
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-1.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <h3 class="bestsellers-caption">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="bestsellers-item card-set-item">
@@ -519,7 +557,9 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-dark" type="button">Leave a review</button>
+          <button class="btn btn-dark" type="button" data-modal-open
+            >Leave a review</button
+          >
         </div>
       </section>
     </main>
@@ -612,5 +652,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

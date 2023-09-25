@@ -32,8 +32,17 @@
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.333" d="M9.143 16h13.714m0 0-3.429-3.429M22.857 16l-3.429 3.429M16 30.857c8.205 0 14.857-6.652 14.857-14.857S24.205 1.143 16 1.143C7.795 1.143 1.143 7.795 1.143 16S7.795 30.857 16 30.857z"/>
     </symbol>
     <symbol id="icon-play" viewBox="0 0 32 32">
-      <path d="M10.909 24V8.727l14.545 7.636-14.545 7.636z"/>
+      <path d="M10.909 24V8.727l14.545 7.636-14.545 7.636z" fill="#FFFFFF"/>
       <path stroke-width=".727" d="M31.636 16c0 8.636-7.001 15.636-15.636 15.636S.364 24.635.364 16C.364 7.364 7.365.364 16 .364S31.636 7.365 31.636 16z"/>
     </symbol>
+    <symbol id="icon-circle" viewBox="0 0 8 8" >
+      <circle cx="4" cy="4" r="3.5" fill="#4C4C4C" stroke="#ECEDED"/>
+    </symbol>
+
+    <symbol id="icon-close" viewBox="0 0 28 28" fill="none">
+      <path d="M21 7L7 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+       <path d="M7 7L21 21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
   </defs>
 </svg>
