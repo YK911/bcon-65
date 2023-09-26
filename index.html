@@ -477,23 +477,43 @@
               <h3 class="bestsellers-caption">CHOCOLATE WITH NUTS</h3>
             </li>
             <li class="bestsellers-item card-set-item">
-              <img
-                class="bestsellers-img"
-                src="./images/bestsellers/img-2.jpg"
-                alt=""
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-wrapper">
+                <img
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-2.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <h3 class="bestsellers-caption">CHOCOLATE WITH FRUITS</h3>
             </li>
             <li class="bestsellers-item card-set-item">
-              <img
-                class="bestsellers-img"
-                src="./images/bestsellers/img-3.jpg"
-                alt=""
-                width="368"
-                height="464"
-              />
+              <div class="bestsellers-wrapper">
+                <img
+                  class="bestsellers-img"
+                  src="./images/bestsellers/img-3.jpg"
+                  alt=""
+                  width="368"
+                  height="464"
+                />
+                <div class="overlay">
+                  <p class="overlay-text">
+                    Chocolate with fruit is an unbeatable combination of two of
+                    the tastiest things in the world. This dessert combines
+                    delicate and aromatic chocolate with fresh and juicy fruits,
+                    creating a true poetry of taste.
+                  </p>
+                </div>
+              </div>
               <h3 class="bestsellers-caption">DARK CHOCOLATE</h3>
             </li>
           </ul>
@@ -557,9 +577,9 @@
               </div>
             </li>
           </ul>
-          <button class="btn btn-dark" type="button" data-modal-open
-            >Leave a review</button
-          >
+          <button class="btn btn-dark" type="button" data-modal-open>
+            Leave a review
+          </button>
         </div>
       </section>
     </main>
@@ -610,7 +630,7 @@
                     aria-label="Twitter icon"
                   >
                     <svg class="socials-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-instagram"></use>
+                      <use href="./images/icons.svg#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -620,16 +640,17 @@
               <p class="footer-address-subject">Contact us</p>
               <ul class="footer-contatcs contacts list">
                 <li class="contacts-item">
-                  <a class="contacts-link link" href="tel:380684439426"
-                    >+380 (68) 443-94-26</a
-                  >
+                  <a class="contacts-link link" href="tel:380684439426">
+                    +380 (68) 443-94-26
+                  </a>
                 </li>
                 <li class="contacts-item">
                   <a
                     class="contacts-link link"
                     href="mailto:simplychoc@gmail.com"
-                    >simplychoc@gmail.com</a
                   >
+                    simplychoc@gmail.com
+                  </a>
                 </li>
               </ul>
             </div>
@@ -649,21 +670,105 @@
               >
             </li>
           </ul>
+          <form>
+            <input type="email" />
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button class="modal-btn" data-modal-close>
+        <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <strong class="modal-caption">
+          LEAVE A REVIEW ABOUT
+          <span class="modal-caption-accent">OUR CHOCOLATE</span>
+        </strong>
+
+        <form class="modal-form" name="reviews-form">
+          <label class="modal-label" for="reviews_user_name">Name</label>
+          <div class="modal-field">
+            <input
+              class="modal-input"
+              type="text"
+              name="reviews_user_name"
+              id="reviews_user_name"
+            />
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="reviews_user_email">Email</label>
+          <div class="modal-field">
+            <input
+              class="modal-input"
+              type="email"
+              name="reviews_user_email"
+              id="reviews_user_email"
+            />
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-mail"></use>
+            </svg>
+          </div>
+          <label class="modal-label" for="reviews_user_phone">
+            Phone number
+          </label>
+          <div class="modal-field">
+            <input
+              class="modal-input"
+              type="tel"
+              name="reviews_user_phone"
+              id="reviews_user_phone"
+            />
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <div class="modal-coment">
+            <label class="modal-label" for="reviews_user_comment">
+              Comment
+            </label>
+            <textarea
+              class="modal-coment-field"
+              name="reviews_user_comment"
+              id="reviews_user_comment"
+              rows="4"
+              placeholder="Enter text"
+            ></textarea>
+          </div>
+
+          <label class="modal-agreement">
+            <input class="modal-agreement-input" type="checkbox" />
+
+            <span class="modal-checkbox">
+              <svg class="modal-checkbox-icon" width="10" height="10">
+                <use href=""></use>
+              </svg>
+            </span>
+            I accept the terms and conditions of the
+            <a
+              class="modal-agreement-link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+          </label>
+
+          <button class="btn btn-accent" type="submit">Send</button>
+        </form>
       </div>
     </div>
 
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
