@@ -859,10 +859,10 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  /* transform: translateX(-50%) translateY(-50%) scale(1); */
   transform: translateX(-50%) translateY(-50%);
   width: 517px;
   min-height: 794px;
+  padding: 40px;
 
   border-radius: 15px;
   background-color: #fafafa;
@@ -875,7 +875,6 @@ button {
 
 .backdrop.is-hidden .modal {
   opacity: 0;
-  /* transform: translateX(-50%) translateY(-70%) scale(0.4); */
   transform: translateX(-50%) translateY(-70%);
   transition-delay: 0s;
 }
@@ -903,4 +902,97 @@ button {
 }
 .modal-btn-icon {
   stroke: currentColor;
+}
+
+/* Reviews form */
+.modal-caption {
+  display: block;
+  width: 298px;
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.modal-caption-accent {
+  color: var(--accent-cl);
+}
+.modal-form {
+}
+.modal-label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-field {
+  position: relative;
+  margin-bottom: 18px;
+}
+.modal-input {
+  width: 100%;
+  height: 68px;
+  padding: 22px 62px;
+
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  color: #404040;
+
+  border-radius: 13px;
+  border: 2px solid rgba(17, 17, 17, 0.05);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.03);
+  outline: transparent;
+}
+.modal-icon {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+
+  fill: transparent;
+  stroke: #404040;
+}
+.modal-coment {
+  margin-bottom: 18px;
+}
+.modal-coment-field {
+  display: block;
+  width: 100%;
+  height: 137px;
+  padding: 22px 24px;
+
+  font-size: 18px;
+  letter-spacing: -0.02em;
+
+  border-radius: 13px;
+  border: 2px solid rgba(17, 17, 17, 0.05);
+  outline: transparent;
+  resize: none;
+}
+.modal-coment-field::placeholder {
+  color: rgba(64, 64, 64, 0.3);
+}
+.modal-agreement {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+.modal-agreement-input {
+}
+.modal-checkbox {
+}
+.modal-checkbox-icon {
+}
+.modal-agreement-link {
+  margin-left: 4px;
+  color: var(--accent-cl);
+  text-decoration: underline;
 }
