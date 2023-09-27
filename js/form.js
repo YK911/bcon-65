@@ -1,11 +1,4 @@
-document
-  .querySelector('[name="reviews-form"]')
-  .addEventListener('submit', event => {
-    event.preventDefault();
-    const { user_name, user_email } = event.target.elements;
+const selector = document.getElementById('reviews_user_phone');
 
-    console.log('User name: ', user_name.value);
-    console.log('User email: ', user_email.value);
-
-    event.target.reset();
-  });
+const im = new Inputmask('+38 (099) 999-99-99');
+im.mask(selector);

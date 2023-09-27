@@ -679,7 +679,7 @@
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-btn-icon" width="28" height="28">
@@ -699,10 +699,17 @@
               type="text"
               name="reviews_user_name"
               id="reviews_user_name"
+              required
+              minlength="2"
+              placeholder="Tony Stark"
             />
             <svg class="modal-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-user"></use>
             </svg>
+            <svg class="error" width="24" height="24">
+              <use href="./images/icons.svg#icon-error"></use>
+            </svg>
+            <span class="warning">warning text</span>
           </div>
           <label class="modal-label" for="reviews_user_email">Email</label>
           <div class="modal-field">
@@ -711,6 +718,8 @@
               type="email"
               name="reviews_user_email"
               id="reviews_user_email"
+              required
+              placeholder=" "
             />
             <svg class="modal-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-mail"></use>
@@ -741,11 +750,18 @@
               id="reviews_user_comment"
               rows="4"
               placeholder="Enter text"
+              required
+              minlength="8"
             ></textarea>
           </div>
 
           <label class="modal-agreement">
-            <input class="modal-agreement-input" type="checkbox" />
+            <input
+              class="modal-agreement-input visually-hidden"
+              type="checkbox"
+              name="reviews_user_agreement"
+              value="true"
+            />
 
             <span class="modal-checkbox">
               <svg class="modal-checkbox-icon" width="10" height="10">
@@ -768,7 +784,10 @@
       </div>
     </div>
 
+    <!-- Libs -->
+    <script src="./js/inputmask.min.js"></script>
+    <!-- Custom js files -->
+    <script src="./js/form.js"></script>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/form.js"></script> -->
   </body>
 </html>
